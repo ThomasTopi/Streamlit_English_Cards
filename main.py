@@ -1,3 +1,21 @@
+import streamlit_window as sw
 import streamlit as st
+from english_words import get_random_number
 
-st.write("Hello Word")
+def get_motivation_title(num):
+    if num <= 10:
+        st.write(f"Procvičeno slov: {num}")
+    if num >= 11 and num <= 20:
+        st.write(f"WOW dobrá práce, procvičeno: {num} slov")
+    if num >= 21 and num <= 40:
+        st.write(f"Blázen! Už máš procvičeno: {num} slov")
+    if num >= 41:
+        st.write(f"Brzo budeš jak rodilej mluvčí! Už máš procvičeno: {num} slov")
+
+def main():
+    st.image("logo.jpg", use_container_width=True)
+    sw.MainGui_English()
+    get_motivation_title(sw.MainGui_English.word_counter)
+
+if __name__=="__main__":
+    main()
