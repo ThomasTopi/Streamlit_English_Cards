@@ -23,4 +23,4 @@ class MainGui_English:
         MainGui_English.word_counter += 1
 
     def get_voice_title(self, ID):
-        VoiceAssistant(get_english_word(ID))
+        VoiceAssistant(get_english_word(ID), ID)
