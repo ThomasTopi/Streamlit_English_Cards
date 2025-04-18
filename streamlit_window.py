@@ -1,7 +1,5 @@
 import streamlit as st
-from voice_assistant import VoiceAssistant
 from english_words import get_english_word, get_czech_word, get_random_number
-
 
 class MainGui_English:
 
@@ -23,4 +21,4 @@ class MainGui_English:
         MainGui_English.word_counter += 1
 
     def get_voice_title(self, ID):
-        VoiceAssistant(get_english_word(ID), ID)
+        st.audio(f"voice_database//voice_{ID}.mp3", format="audio/mp3")
