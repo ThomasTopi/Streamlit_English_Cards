@@ -1,6 +1,5 @@
-import streamlit_window as sw
+import src.streamlit_window as sw
 import streamlit as st
-from english_words import get_random_number
 
 def get_motivation_title(num):
     if num <= 10:

@@ -1,5 +1,5 @@
 import streamlit as st
-from english_words import get_english_word, get_czech_word, get_random_number
+from src.english_words import get_english_word, get_czech_word, get_random_number
 
 class MainGui_English:
 

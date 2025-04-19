@@ -1,7 +1,7 @@
 """File for loading words into voice.mp3 from database"""
 from gtts import gTTS
 import os
-from english_words import get_english_word, data_size
+from src.english_words import get_english_word, data_size
 
 class VoiceAssistant:
     def __init__(self, word, ID):
