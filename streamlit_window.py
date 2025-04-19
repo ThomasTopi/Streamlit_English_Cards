@@ -21,4 +21,4 @@ class MainGui_English:
         MainGui_English.word_counter += 1
 
     def get_voice_title(self, ID):
-        st.audio(f"voice_database//voice_{ID}.mp3", format="audio/mp3")
+        st.audio(f"voice_database//voice_{ID}.mp3", format="audio/mpeg")
